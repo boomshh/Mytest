@@ -1,22 +1,22 @@
 package com.example.mytest
 
-class Archer {
-    var name:String = ""
-    var age:Int = 0
-    var gender:String = ""
-    var money:Int = 0
-    var hp:Int = 0
+class Archer : Character {
+    var name:String
+    var age:Int
+    var gender:String
+    var money:Int
+    var hp:Int
 
     constructor(_name:String, _age:Int, _gender:String, _money:Int, _hp:Int) {
-        println("${name}궁수 생성")
         name = _name
         age = _age
         gender = _gender
         money = _money
         hp = _hp
+        println("${name}궁수 생성")
     }
 
-    fun attack() {
+    override fun attack() {
         println("활쏘기!")
     }
 
